@@ -37,8 +37,8 @@
           <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/functional_tests/tests.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="20" column="70" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="70" />
+                <state relative-caret-position="873">
+                  <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
                   <folding>
                     <element signature="e#0#42#0" expanded="true" />
                   </folding>
@@ -534,8 +534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functional_tests/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" column="70" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="70" />
+        <state relative-caret-position="873">
+          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>

@@ -59,14 +59,6 @@ class NewVisitorTest(LiveServerTestCase):
         self.wait_for_row_in_list_table('1: Buy birthday present for Marc Anthony')
         self.wait_for_row_in_list_table('2: Go to that nice perfume shop, he needs new cologne')
 
-        # Cleopatra wonders whether the site will remember her list. Then she sees that the site has generated a unique URL
-        # for her -- there is some explanatory text to that effect.
-        self.fail('Finish the test!')
-
-        # She visits that URL -- her to-do list is still there.
-
-        # Satisfied, she goes back to sleep.
-
     def test_multiple_users_can_start_lists_at_different_urls(self):
         # Cleopatra starts a new to-do list
         self.browser.get(self.live_server_url)
@@ -78,4 +70,35 @@ class NewVisitorTest(LiveServerTestCase):
         # She notices that her list has a unique URL
         cleopatra_list_url = self.browser.current_url
         self.assertRegex(cleopatra_list_url, '/lists/.+')
+
+        # Now a new user, Nefertiti, comes along to the site.
+
+        ## We use a new browser session to make sure that no information
+        ## of Cleopatra is coming through from cookies etc
+        self.browser.quit()
+        self.browser = webdriver.Firefox()
+
+        # Nefertiti visits the home page. There is no sign of Edith's list
+        self.browser.get(self.live_server_url)
+        page_text = self.browser.find_element_by_tag_name('body').text
+        self.assertNotIn('Buy birthday present for Marc Anthony', page_text)
+        self.assertNotIn('bake a cake', page_text)
+
+        # Nefertiti starts a new list by entering a new item. She does not have a boyfriend, yet and she loves baking
+        inputbox = self.browser.find_element_by_id('id_new_item')
+        inputbox.send_keys('Buy flour')
+        inputbox.send_keys(Keys.ENTER)
+        self.wait_for_row_in_list_table('1: Buy flour')
+
+        # Nefertiti gets her own unique URL
+        nefertiti_list_url = self.browser.current_url
+        self.assertRegex(nefertiti_list_url, '/lists/.+')
+        self.assertNotEqual(nefertiti_list_url, cleopatra_list_url)
+
+        # Again, there is no trace of Cleopatra's list
+        page_text = self.browser.find_element_by_tag_name('body').text
+        self.assertNotIn('Buy birthday present for Marc Anthony', page_text)
+        self.assertIn('Buy flour', page_text)
+
+        # Satisfied, they both go back to sleep
 

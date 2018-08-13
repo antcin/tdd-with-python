@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13d1deb1-c5bb-4f7b-bb19-68417b04447c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lists/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/lists/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/superlists/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/superlists/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lists/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lists/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,16 +75,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lists/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="210">
+                  <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/superlists/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
@@ -125,9 +124,9 @@
         <option value="$PROJECT_DIR$/lists/models.py" />
         <option value="$PROJECT_DIR$/functional_tests/tests.py" />
         <option value="$PROJECT_DIR$/lists/templates/home.html" />
-        <option value="$PROJECT_DIR$/lists/views.py" />
         <option value="$PROJECT_DIR$/lists/tests.py" />
         <option value="$PROJECT_DIR$/superlists/urls.py" />
+        <option value="$PROJECT_DIR$/lists/views.py" />
       </list>
     </option>
   </component>
@@ -646,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lists/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lists/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="948">
@@ -670,6 +662,13 @@
           <folding>
             <element signature="e#634#666#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lists/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>

@@ -3,10 +3,16 @@ from lists.models import Item, List
 
 
 class HomePageTest(TestCase):
-    class ListViewTest(TestCase):
-        def test_uses_list_template(self):
-            response = self.client.get('/lists/the-only-list-in-the-world/')
-            self.assertTemplateUsed(response, 'list.html')
+
+    def test_uses_home_template(self):
+        response = self.client.get('/')
+        self.assertTemplateUsed(response, 'home.html')
+
+
+class ListViewTest(TestCase):
+    def test_uses_list_template(self):
+        response = self.client.get('/lists/the-only-list-in-the-world/')
+        self.assertTemplateUsed(response, 'list.html')
 
     def test_displays_all_items(self):
         list_ = List.objects.create()
@@ -18,9 +24,6 @@ class HomePageTest(TestCase):
         self.assertContains(response, 'itemey 1')
         self.assertContains(response, 'itemey 2')
 
-    def test_uses_home_template(self):
-        response = self.client.get('/')
-        self.assertTemplateUsed(response, 'home.html')
 
 class ListAndItemModelsTest(TestCase):
 
@@ -29,7 +32,7 @@ class ListAndItemModelsTest(TestCase):
         list_.save()
 
         first_item = Item()
-        first_item.text = "The first (ever) list item"
+        first_item.text = 'The first (ever) list item'
         first_item.list = list_
         first_item.save()
 
@@ -47,10 +50,9 @@ class ListAndItemModelsTest(TestCase):
         first_saved_item = saved_items[0]
         second_saved_item = saved_items[1]
         self.assertEqual(first_saved_item.text, 'The first (ever) list item')
-        self.assertEqual(first_saved_item, list_)
+        self.assertEqual(first_saved_item.list, list_)
         self.assertEqual(second_saved_item.text, 'Item the second')
-        self.assertEqual(second_saved_item, list_)
-
+        self.assertEqual(second_saved_item.list, list_)
 
 
 class NewListTest(TestCase):
@@ -63,8 +65,3 @@ class NewListTest(TestCase):
     def test_redirects_after_POST(self):
         response = self.client.post('/lists/new', data={'item_text': 'A new list item'})
         self.assertRedirects(response, '/lists/the-only-list-in-the-world/')
-
-
-
-
-

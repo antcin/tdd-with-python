@@ -4,6 +4,8 @@
     <list default="true" id="13d1deb1-c5bb-4f7b-bb19-68417b04447c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lists/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/lists/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lists/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lists/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/superlists/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/superlists/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +27,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lists/tests.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+                <state relative-caret-position="859">
+                  <caret line="73" column="61" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
                 </state>
               </provider>
             </entry>
@@ -73,25 +75,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lists/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/superlists/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#634#666#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -117,6 +107,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>assert</find>
+      <find>test_uses_list</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,12 +119,12 @@
         <option value="$PROJECT_DIR$/superlists/settings.py" />
         <option value="$PROJECT_DIR$/functional_tests.py" />
         <option value="$PROJECT_DIR$/functional_tests/tests.py" />
-        <option value="$PROJECT_DIR$/superlists/urls.py" />
         <option value="$PROJECT_DIR$/lists/templates/home.html" />
         <option value="$PROJECT_DIR$/lists/templates/list.html" />
         <option value="$PROJECT_DIR$/lists/models.py" />
-        <option value="$PROJECT_DIR$/lists/views.py" />
+        <option value="$PROJECT_DIR$/superlists/urls.py" />
         <option value="$PROJECT_DIR$/lists/tests.py" />
+        <option value="$PROJECT_DIR$/lists/views.py" />
       </list>
     </option>
   </component>
@@ -614,16 +605,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functional_tests.py" />
-    <entry file="file://$PROJECT_DIR$/superlists/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#634#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lists/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -645,16 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lists/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functional_tests/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -665,10 +636,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/superlists/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#634#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lists/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        <state relative-caret-position="859">
+          <caret line="73" column="61" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lists/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
